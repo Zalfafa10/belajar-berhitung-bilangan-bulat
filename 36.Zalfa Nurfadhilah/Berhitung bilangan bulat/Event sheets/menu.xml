@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>menu</name>
+    <events>
+        <event-block sid="888750322320484">
+            <conditions>
+                <condition id="3" name="On touched object" sid="383743391145758" type="Touch">
+                    <param id="0" name="Object">home</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="524726809105972" type="System">
+                    <param id="0" name="Layout">home</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="263636390582575">
+            <conditions>
+                <condition id="3" name="On touched object" sid="131324075772499" type="Touch">
+                    <param id="0" name="Object">penjumlahan</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="367673367823713" type="System">
+                    <param id="0" name="Layout">soallevel1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="191962919099512">
+            <conditions>
+                <condition id="3" name="On touched object" sid="823361532383534" type="Touch">
+                    <param id="0" name="Object">papan</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="360782004637035" type="System">
+                    <param id="0" name="Layout">soallevel1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="684000876736636">
+            <conditions>
+                <condition id="3" name="On touched object" sid="555188850656987" type="Touch">
+                    <param id="0" name="Object">pengurangan</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="446650273773546" type="System">
+                    <param id="0" name="Layout">pengurangan1level1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="133729803568308">
+            <conditions>
+                <condition id="3" name="On touched object" sid="266969461817886" type="Touch">
+                    <param id="0" name="Object">papank</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="809324747096915" type="System">
+                    <param id="0" name="Layout">pengurangan1level1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="511300096165861">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="754657094424348" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="341029850973232">
+                    <conditions>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="337162737236212" type="Audio">
+                            <param id="0" name="Tag">&quot;musik&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="839049172477057" type="Audio" />
+                        <action id="0" name="Play" sid="480195875993582" type="Audio">
+                            <param id="0" name="Audio file">Kids-Game-Childrens-Music-Instrumental-Music-For-Kids</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;musik&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="925326924901718">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="261844871985480" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="195993722018200" type="Audio" />
+                        <action id="0" name="Play" sid="773043112021381" type="Audio">
+                            <param id="0" name="Audio file">Kids-Game-Childrens-Music-Instrumental-Music-For-Kids</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;musik&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="233847896917971">
+            <conditions>
+                <condition id="3" name="On touched object" sid="971103666442992" type="Touch">
+                    <param id="0" name="Object">cuara</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Move to layer" sid="858720323344020" type="cuara">
+                    <param id="0" name="Layer">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="481779962888594">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="454839804626804" type="System">
+                            <param id="0" name="Variable">tombolmusik</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="209082257808296" type="System">
+                            <param id="0" name="Variable">tombolmusik</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="2" name="Set muted" sid="933179918335458" type="Audio">
+                            <param id="0" name="Tag">&quot;musik&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="483294748495299" type="cuara">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="847118838646976">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="991025638354635" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="936531983363678" type="System">
+                            <param id="0" name="Variable">tombolmusik</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="2" name="Set muted" sid="387732650461257" type="Audio">
+                            <param id="0" name="Tag">&quot;musik&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="388980778250116" type="cuara">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

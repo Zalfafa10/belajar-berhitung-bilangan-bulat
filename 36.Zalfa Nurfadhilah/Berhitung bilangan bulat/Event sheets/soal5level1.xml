@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>soal5level1</name>
+    <events>
+        <event-block sid="785206264593952">
+            <conditions>
+                <condition id="3" name="On touched object" sid="627636761103197" type="Touch">
+                    <param id="0" name="Object">layout_jawaban</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="552391780988097" type="layout_jawaban">
+                    <param id="0" name="Unique ID">91</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="527891312993792" type="System">
+                    <param id="0" name="Variable">skor</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+                <action id="0" name="Set text" sid="516685999337746" type="teskskor">
+                    <param id="0" name="Text">&quot;SKOR = &quot; &amp; skor</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="308970870846899" type="teskskor">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="303613273903374" type="papanskor">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="599940871234533" type="back">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="169279988577819" type="home2">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="561362497876582" type="restart">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action id="-24" name="Move to top" sid="321958125083971" type="background4" />
+                <action id="-24" name="Move to top" sid="563295783749219" type="papanskor" />
+                <action id="-24" name="Move to top" sid="731429430464845" type="teskskor" />
+                <action id="-24" name="Move to top" sid="540206290686966" type="back" />
+                <action id="-24" name="Move to top" sid="695724858967790" type="home2" />
+                <action id="-24" name="Move to top" sid="668843828710240" type="restart" />
+            </actions>
+        </event-block>
+        <event-block sid="900605871703528">
+            <conditions>
+                <condition id="3" name="On touched object" sid="927337412122059" type="Touch">
+                    <param id="0" name="Object">layout_jawaban</param>
+                </condition>
+                <condition id="-14" inverted="1" name="Pick by unique ID" sid="929288259326467" type="layout_jawaban">
+                    <param id="0" name="Unique ID">91</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="515615791107340" type="teskskor">
+                    <param id="0" name="Text">&quot;SKOR = &quot; &amp; skor</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="519791499394654" type="teskskor">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="734340881120032" type="papanskor">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="390266927316432" type="back">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="734979654647278" type="home2">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="728167389913769" type="restart">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action id="-24" name="Move to top" sid="182740838250968" type="background4" />
+                <action id="-24" name="Move to top" sid="757336306928106" type="papanskor" />
+                <action id="-24" name="Move to top" sid="867326104570309" type="teskskor" />
+                <action id="-24" name="Move to top" sid="297623444210750" type="back" />
+                <action id="-24" name="Move to top" sid="832904610316115" type="home2" />
+                <action id="-24" name="Move to top" sid="921433293175518" type="restart" />
+            </actions>
+        </event-block>
+        <event-block sid="959429464977018">
+            <conditions>
+                <condition id="3" name="On touched object" sid="766061645508471" type="Touch">
+                    <param id="0" name="Object">home2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="271717286017605" type="System">
+                    <param id="0" name="Layout">home</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="764432709609749">
+            <conditions>
+                <condition id="3" name="On touched object" sid="493212749938274" type="Touch">
+                    <param id="0" name="Object">back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="424258303309819" type="System">
+                    <param id="0" name="Layout">menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="230624220876632">
+            <conditions>
+                <condition id="3" name="On touched object" sid="209235259231836" type="Touch">
+                    <param id="0" name="Object">restart</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="506640578836866" type="System">
+                    <param id="0" name="Layout">soallevel1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

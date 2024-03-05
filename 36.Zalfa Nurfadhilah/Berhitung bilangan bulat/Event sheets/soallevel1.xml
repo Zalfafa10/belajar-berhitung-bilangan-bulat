@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>soallevel1</name>
+    <events>
+        <variable constant="0" name="skor" sid="326669607229359" static="0" type="number">0</variable>
+        <event-block sid="784649475643441">
+            <conditions>
+                <condition id="3" name="On touched object" sid="642718665411009" type="Touch">
+                    <param id="0" name="Object">layout_jawaban</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="443582826710227" type="layout_jawaban">
+                    <param id="0" name="Unique ID">36</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="959081762843093" type="System">
+                    <param id="0" name="Variable">skor</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="539404646289717" type="System">
+                    <param id="0" name="Layout">soal2level1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="396702666771495">
+            <conditions>
+                <condition id="3" name="On touched object" sid="784914106104346" type="Touch">
+                    <param id="0" name="Object">layout_jawaban</param>
+                </condition>
+                <condition id="-14" inverted="1" name="Pick by unique ID" sid="742881404133465" type="layout_jawaban">
+                    <param id="0" name="Unique ID">36</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="722166088884310" type="System">
+                    <param id="0" name="Layout">soal2level1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="164047928567828">
+            <conditions>
+                <condition id="3" name="On touched object" sid="146359790836858" type="Touch">
+                    <param id="0" name="Object">kembali3</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

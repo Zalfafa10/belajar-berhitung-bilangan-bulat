@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>home</name>
+    <events>
+        <variable constant="0" name="tombolmusik" sid="691825363277841" static="0" type="number">0</variable>
+        <event-block sid="994444809696252">
+            <conditions>
+                <condition id="3" name="On touched object" sid="475213123652579" type="Touch">
+                    <param id="0" name="Object">play</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="530478054734720" type="System">
+                    <param id="0" name="Layout">menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="242658135380570">
+            <conditions>
+                <condition id="3" name="On touched object" sid="924448381029724" type="Touch">
+                    <param id="0" name="Object">keluar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Close" sid="859725259553502" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="881661978413582">
+            <conditions>
+                <condition behavior="LiteTween" id="4" name="On tween end" sid="185739705997149" type="judul" />
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="658757162376960" type="play">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="562514926445287" type="keluar">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="698946439394736">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="831639116290488" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="433930013273081">
+                    <conditions>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="732427242340741" type="Audio">
+                            <param id="0" name="Tag">&quot;musik&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="692811999323836" type="Audio" />
+                        <action id="0" name="Play" sid="318798269814413" type="Audio">
+                            <param id="0" name="Audio file">Kids-Game-Childrens-Music-Instrumental-Music-For-Kids</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;musik&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="783217426852986">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="403637807705649" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="321062265207841" type="Audio" />
+                        <action id="0" name="Play" sid="701149173288185" type="Audio">
+                            <param id="0" name="Audio file">Kids-Game-Childrens-Music-Instrumental-Music-For-Kids</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;musik&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="154797466387592">
+            <conditions>
+                <condition id="3" name="On touched object" sid="522085085391597" type="Touch">
+                    <param id="0" name="Object">musik</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Move to layer" sid="331931046252734" type="musik">
+                    <param id="0" name="Layer">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="396976631554842">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="625866469799585" type="System">
+                            <param id="0" name="Variable">tombolmusik</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="320202145713592" type="System">
+                            <param id="0" name="Variable">tombolmusik</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="2" name="Set muted" sid="315676812337824" type="Audio">
+                            <param id="0" name="Tag">&quot;musik&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="381905981329892" type="musik">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="691022012609870">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="307255024526852" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="539834050025680" type="System">
+                            <param id="0" name="Variable">tombolmusik</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="2" name="Set muted" sid="254420787500666" type="Audio">
+                            <param id="0" name="Tag">&quot;musik&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="736707966487934" type="musik">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

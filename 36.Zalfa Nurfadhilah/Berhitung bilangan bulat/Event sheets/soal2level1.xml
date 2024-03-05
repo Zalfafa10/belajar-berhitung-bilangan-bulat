@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>soal2level1</name>
+    <events>
+        <event-block sid="986182443270170">
+            <conditions>
+                <condition id="3" name="On touched object" sid="547245880541479" type="Touch">
+                    <param id="0" name="Object">layout_jawaban</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="535858737964161" type="layout_jawaban">
+                    <param id="0" name="Unique ID">49</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="796713257629692" type="System">
+                    <param id="0" name="Variable">skor</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="442597066468734" type="System">
+                    <param id="0" name="Layout">soal3level1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="384013098773997">
+            <conditions>
+                <condition id="3" name="On touched object" sid="138367295341787" type="Touch">
+                    <param id="0" name="Object">layout_jawaban</param>
+                </condition>
+                <condition id="-14" inverted="1" name="Pick by unique ID" sid="285377529679778" type="layout_jawaban">
+                    <param id="0" name="Unique ID">49</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="572882563116864" type="System">
+                    <param id="0" name="Layout">soal3level1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

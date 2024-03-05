@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>pengurangan2lvel2</name>
+    <events>
+        <event-block sid="446933644952988">
+            <conditions>
+                <condition id="3" name="On touched object" sid="490998654406457" type="Touch">
+                    <param id="0" name="Object">layout_jawaban</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="313824879471499" type="layout_jawaban">
+                    <param id="0" name="Unique ID">276</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="745582665939220" type="System">
+                    <param id="0" name="Variable">skor2</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="273301582796556" type="System">
+                    <param id="0" name="Layout">pengurangan3level1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="765277515942640">
+            <conditions>
+                <condition id="3" name="On touched object" sid="815153135327793" type="Touch">
+                    <param id="0" name="Object">layout_jawaban</param>
+                </condition>
+                <condition id="-14" inverted="1" name="Pick by unique ID" sid="730102104323085" type="layout_jawaban">
+                    <param id="0" name="Unique ID">276</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="962092511845068" type="System">
+                    <param id="0" name="Layout">pengurangan3level1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
